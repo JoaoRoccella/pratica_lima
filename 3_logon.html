@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logon</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        body {
+            display: flex;
+        }
+
+        .logon {
+            z-index: 2;
+            display: flex;
+            width: 100vw;
+            flex-direction: column;
+            /* justify-content: center; */
+            margin-top: 100px;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .senha input {
+            font-size: 1rem;
+            box-shadow: 0 1px 2px #0009;
+            width: 280px;
+            background-color: #00003c;
+            padding: 6px 8px;
+            color: #fff;
+            margin-top: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: double 2px transparent;
+            border-radius: 6px;
+            background-image: linear-gradient(#00003c, #00003c), linear-gradient(165deg, #005fbd, #00b4e6);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+
+        .senha input::placeholder {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+
+        .senha input::-ms-reveal {
+            filter: invert(100%);
+            width: 14px;
+            margin-right: 2.5rem;
+        }
+
+        .senha input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="background">
+        <img src="images/windows11-default-wallpaper-scaled.jpg" alt="Background da tela de entrada do Windows 11">
+    </div>
+
+    <a href="4_desktop.html">
+        <div class="blur-overlay"></div>
+    </a>
+
+    <style>
+        #usuarios {
+            z-index: 2;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 30vw;
+        }
+
+        .lista-usuarios ul {
+            width: auto;
+            min-width: 10.2rem;
+            display: inline-flex;
+            align-items: center;
+            list-style: none;
+            white-space: nowrap;
+            border-radius: 4px;
+        }
+
+        .lista-usuarios li {
+            padding: 5px 15px;
+        }
+
+        .lista-usuarios ul:focus,
+        .lista-usuarios ul:hover,
+        .lista-usuarios ul.focus {
+            background-color: #fff1;
+            outline: none;
+            border: none;
+            cursor: default;
+        }
+
+        .lista-usuarios .nome-usuario {
+            color: #fff;
+            padding: 10px 10px 10px 0;
+            vertical-align: middle;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+        .lista-usuarios img {
+            border-radius: 50%;
+            border: 1px solid #eee;
+        }
+
+        .icone-usuario>.profile-icon {
+            box-sizing: border-box;
+            width: 48px;
+            height: 48px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .icone-usuario>.profile-icon .head {
+            width: 14px;
+            height: 14px;
+            background-color: #8B8B8B;
+            border-radius: 50%;
+        }
+
+        .icone-usuario>.profile-icon .bust {
+            width: 22px;
+            height: 12px;
+            background-color: #8B8B8B;
+            border-radius: 4px 4px 12px 12px;
+        }
+    </style>
+
+    <section id="usuarios">
+        <div class="lista-usuarios">
+            <ul tabindex="0">
+                <li class="icone-usuario">
+                    <div class="profile-icon">
+                        <div class="head"></div>
+                        <div class="bust"></div>
+                    </div>
+                </li>
+                <li class="nome-usuario">Aluno FIC</li>
+            </ul>
+            <ul tabindex="1">
+                <li class="icone-usuario">
+                    <div class="profile-icon">
+                        <div class="head"></div>
+                        <div class="bust"></div>
+                    </div>
+                </li>
+                <li class="nome-usuario">Aluno 1DSI</li>
+            </ul>
+            <ul tabindex="2">
+                <li class="icone-usuario">
+                    <div class="profile-icon">
+                        <div class="head"></div>
+                        <div class="bust"></div>
+                    </div>
+                </li>
+                <li class="nome-usuario">Aluno 2DSI</li>
+            </ul>
+            <ul tabindex="3" class="focus">
+                <li class="icone-usuario">
+                    <div class="profile-icon">
+                        <div class="head"></div>
+                        <div class="bust"></div>
+                    </div>
+                </li>
+                <li class="nome-usuario">Instrutor</li>
+            </ul>
+            <ul tabindex="4">
+                <li class="icone-usuario">
+                    <div class="profile-icon">
+                        <div class="head"></div>
+                        <div class="bust"></div>
+                    </div>
+                </li>
+                <li class="nome-usuario">Suporte</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="logon">
+
+        <div class="profile-icon">
+            <div class="head"></div>
+            <div class="bust"></div>
+        </div>
+
+        <div class="usuario">
+            <span>Instrutor</span>
+        </div>
+
+        <div class="senha">
+            <input type="password" placeholder="Senha" autofocus>
+            <a href="4_desktop.html">
+                <span class="icone-seta">
+                    <img src="images/icons8-direita-48.png" alt="Enviar" title="Enviar">
+                </span>
+            </a>
+        </div>
+
+        <style>
+            .senha {
+                position: relative;
+            }
+            .icone-seta {
+                width: 20px;
+                height: 20px;
+                display: block;
+                position: absolute;
+                right: 6px;
+                bottom: 6px;
+                padding: 2px 6px;
+                border-radius: 2px;
+            }
+            .icone-seta:hover {
+                background-color: #005fbd;
+            }
+            .icone-seta img {
+                width: 18px;
+            }
+        </style>
+
+        <style>
+            .profile-icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                background-color: #fff;
+                padding: 40px;
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+            }
+
+            .head {
+                height: 60px;
+                width: 60px;
+                background-color: #8B8B8B;
+                border-radius: 50%;
+            }
+
+            .bust {
+                height: 50px;
+                width: 100px;
+                background-color: #8B8B8B;
+                border-radius: 16px 16px 50% 50%;
+            }
+        </style>
+
+    </section>
+
+
+    <style>
+        #icones-bandeja {
+            z-index: 2;
+            display: inline-flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 30vw;
+            padding: 2rem;
+        }
+
+        #icones-bandeja div {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        #icones-bandeja img {
+            width: 18px;
+            padding: 14px;
+            border-radius: 4px;
+        }
+        #icones-bandeja img:hover {
+            background-color: #fff2;
+            outline: none;
+            border: none;
+            cursor: default;
+        }
+    </style>
+    <section id="icones-bandeja">
+        <div>
+            <img src="images/icons8-wi-fi-48.png" alt="">
+            <img src="images/icons8-ferramentas-de-acessibilidade-48.png" alt="">
+            <img src="images/icons8-desligar-48.png" alt="">
+        </div>
+    </section>
+
+    <a href="1_booting.html"><span class="restart">Restart</span></a>
+</body>
+
+</html>

@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="refresh" content="5; url=3_login.html"> -->
     <title>Welcome</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/2_welcome.css">
+    <style>
+        .background img {
+            width: 100%;
+            height: 100vh;
+            object-fit: fill;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
 
+        body {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin-top: 100px;
+        }
+
+        #horario {
+            color: white;
+            font-size: 8rem;
+            font-weight: 500;
+            z-index: 1;
+            cursor: default;
+            vertical-align: middle;
+        }
+
+        #data {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 500;
+            z-index: 1;
+            cursor: default;
+        }
+        #horario a {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        #horario .separador {
+            margin-top: -1.5rem;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="background">
+        <a href="3_login.html">
+            <img src="images/windows11-default-wallpaper-scaled.jpg" alt="Background da tela de entrada do Windows 11">
+        </a>
+    </div>
+
+    <div id="horario">
+        <a href="3_login.html">
+            <span>21</span>
+            <span class="separador">:</span>
+            <span>43</span>
+        </a>
+    </div>
+
+    <div id="data">
+        <a href="3_login.html"><span>Quarta-feira, 11 de junho de 2025</span></a>
+    </div>
+
 
 </body>
+
 </html>

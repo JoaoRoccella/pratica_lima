@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/2_welcome.css">
     <style>
-        .background img {
-            width: 100%;
-            height: 100vh;
-            object-fit: fill;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
         body {
             overflow: hidden;
             display: flex;
@@ -25,57 +16,36 @@
             justify-content: flex-start;
             align-items: center;
             height: 100vh;
-            background-color: black;
+            background-color: #000;
             margin-top: 100px;
+            /* transition: all 300ms; */
         }
 
-        #horario {
-            color: white;
-            font-size: 8rem;
-            font-weight: 500;
-            z-index: 1;
-            cursor: default;
-            vertical-align: middle;
-        }
+        
 
-        #data {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: 500;
-            z-index: 1;
-            cursor: default;
-        }
-        #horario a {
-            display: flex;
-            /* justify-content: center; */
-            align-items: center;
-        }
-        #horario .separador {
-            margin-top: -1.5rem;
-        }
     </style>
 </head>
 
-<body>
+<body class="fadeIn">
     <div class="background">
-        <a href="3_login.html">
+        <a href="3_logon.html">
             <img src="images/windows11-default-wallpaper-scaled.jpg" alt="Background da tela de entrada do Windows 11">
         </a>
     </div>
 
     <div id="horario">
         <a href="3_login.html">
-            <span>21</span>
+            <span>13</span>
             <span class="separador">:</span>
-            <span>43</span>
+            <span>18</span>
         </a>
     </div>
 
     <div id="data">
-        <a href="3_login.html"><span>Quarta-feira, 11 de junho de 2025</span></a>
+        <a href="3_login.html"><span>quinta-feira, 12 de junho</span></a>
     </div>
 
-
+    <a href="1_booting.html"><span class="restart">Restart</span></a>
 </body>
 
 </html>

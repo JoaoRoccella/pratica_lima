@@ -11,21 +11,24 @@
         }
     </style>
 </head>
-<body class="fadeIn">
+<body>
     <div class="background">
-        <a href="5_bsod.html">
+        <!-- <a href="5_bsod.html"> -->
             <img src="images/windows11-wallpaper.jpg" alt="Plano de fundo da Área de Trabalho do Windows 11">
-        </a>
+        <!-- </a> -->
     </div>
     <a href="1_booting.html"><span class="restart">Restart</span></a>
 
     <style>
+        .background img {
+            object-fit: cover;
+        }
         #desktop {
             z-index: 2;
             display: grid;
             grid-template: repeat(6, 1fr) / repeat(16, 1fr);
             height: calc(100vh - 3rem);
-            margin: 10px;
+            padding: 10px;
         }
         .atalho {
             z-index: 2;
@@ -37,18 +40,33 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 0.8rem;
             color: #fff;
-            text-shadow: 0 0 2px #000;
-            font-weight: 200;
+            text-shadow: 
+                1px 0 1px #000,
+                0 1px 1px #000,
+                1px 1px 1px #000,
+                -1px -1px 1px #000;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            cursor: default;
         }
         .c1-r1 {
             grid-area: 1 / span 1 / 2 / span 1;
             z-index: 2;
         }
+        .c1-r2 {
+            grid-area: 2 / span 1 / 2 / span 1;
+            z-index: 2;
+        }
     </style>
     <section id="desktop">
-        <span class="atalho c1-r1">
+        <span class="atalho c1-r2">
             <img src="images/windows-11.png" alt="" width="48">
             <span>Windows</span>
+        </span>
+        <span class="atalho c1-r1">
+            <img src="images/recycle-bin.webp" alt="" width="48">
+            <span>Lixeira</span>
         </span>
     </section>
 
@@ -58,8 +76,8 @@
             bottom: 0;
             width: 100vw;
             height: 3rem;
-            background-color: #ddd;
-            border-top: 1px solid #999;
+            background-color: #eee;
+            border-top: 2px solid #bebebe;
             display: flex;
             justify-content: space-between;
         }

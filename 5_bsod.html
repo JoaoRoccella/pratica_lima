@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,57 +14,86 @@
             height: 100vh;
             color: #fff;
             font-weight: 300;
-            padding: 100px 0 0 100px;
             overflow: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             cursor: default;
         }
+
         .bad-info {
-            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10vw;
+            width: 45vw;
+            height: 60vh;
         }
+
         .emoji {
             font-size: 9rem;
         }
+
         .main-info {
             font-size: 1.5rem;
-        }
-        .main-info p {
             margin-bottom: 1rem;
+            line-height: 1.5;
         }
+
         .more-info {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
+            text-align: justify;
         }
-        .stop-code {
+
+        .stop-code p {
             font-size: 0.6rem;
+            margin-top: 0.3rem;
+        }
+
+        .support-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 4rem;
+        }
+
+        .qr-code img {
+            border: 2px solid #fff;
+            float: left;
+            margin-right: 10px;
         }
     </style>
 </head>
+
 <body>
     <a href="1_booting.html"><span class="restart">Restart</span></a>
 
-    <div class="emoji">
-        <span>:(</span>
-    </div>
 
     <div class="bad-info">
-        <div class="main-info">
-            <p>Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.</p>
-            <p>20% complete</p>
+
+        <div class="emoji">
+            <span>:(</span>
         </div>
-    
+
+
+        <p class="main-info">Your PC ran into a problem and needs to restart. We're just collecting some error info, and
+            then we'll restart for you.</p>
+
+        <p class="main-info">100% complete</p>
+
         <footer>
             <div class="qr-code">
-                <img src="" alt="">
+                <img src="images/QRcode.png" alt="QRcode" width="60">
             </div>
             <div class="support-info">
                 <p class="more-info">For more information about this issue and possible fixes, visit https://www.windows.com/stopcode</p>
-                <p class="stop-code">If you call a support person, give them this info: 
-                <p class="stop-code">Stop code: CRITICAL_PROCESS_DIED</p>
-                    
+                <div class="stop-code">
+                    <p>If you call a support person, give them this info:
+                    <p>Stop code: CRITICAL_PROCESS_DIED</p>
+                </div>
             </div>
         </footer>
     </div>
 
 </body>
+
 </html>

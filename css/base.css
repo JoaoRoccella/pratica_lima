@@ -73,6 +73,7 @@ a {
     padding: 10px;
     background-color: black;
     color: white;
+    border-bottom-left-radius: 16px;
 }
 
 /*** Animações ***/

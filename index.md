@@ -1,3 +1,8 @@
+---
+title: false
+layout: default
+---
+
 # Windows 11 com HTML e CSS
 
 Este projeto é uma recriação visual das telas iniciais do Windows 11, desenvolvida exclusivamente com HTML e CSS, sem uso de JavaScript ou frameworks. Ele simula, de forma estática e responsiva, as etapas clássicas da experiência de inicialização do sistema operacional: **booting**, **lock screen**, **tela de login**, **desktop** e até mesmo a icônica tela de erro **BSOD**. A proposta central foi explorar ao máximo as possibilidades visuais oferecidas pelas folhas de estilo em cascata, usando transições, gradientes, fontes customizadas e técnicas modernas de layout (Flexbox e Grid).

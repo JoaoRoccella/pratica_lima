@@ -1,6 +1,6 @@
 ---
-title: false
-layout: default
+title: Windows 11 com HTML e CSS
+layout: none
 ---
 
 # Windows 11 com HTML e CSS
